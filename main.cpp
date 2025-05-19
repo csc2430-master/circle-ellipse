@@ -7,6 +7,8 @@
 using std::cout;
 using std::endl;
 
+void PrintPretty(const Ellipse& ellipse);
+
 int main() {
 	Ellipse e1(2, 3);
 	Ellipse e2(1,1);
@@ -45,6 +47,22 @@ int main() {
 	cout << c2.GetPerimeter() << endl;
 	cout << c3.GetPerimeter() << endl;
 
+	cout << "-------------------" << endl;
+
+	PrintPretty(e1);
+	PrintPretty(c1);
+
+
 
 	return 0;
 }
+
+// github.com/csc2430-master/
+
+void PrintPretty(const Ellipse& ellipse) {
+	cout << ellipse.ToString() << endl;
+	cout << "\t" << ellipse.GetArea() << endl;
+	cout << "\t" << ellipse.GetPerimeter() << endl;
+
+}
+
