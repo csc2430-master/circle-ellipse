@@ -10,7 +10,7 @@
 class Circle : public Ellipse {
 public:
 	Circle(double radius, Point center);
-	string ToString()const;
+	virtual string ToString()const;
 	double GetPerimeter()const;
 
 };

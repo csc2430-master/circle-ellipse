@@ -16,7 +16,7 @@ Ellipse::Ellipse(double a, double b): _a(a), _b(b) {
 
 string Ellipse::ToString() const {
 	stringstream ss;
-	ss << "Ellipse: " << _a << " " << _b << " " << _center.ToString();
+	ss << "Ellipse";
 	return ss.str();
 }
 

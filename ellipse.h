@@ -15,7 +15,7 @@ protected: // These members are accessible to the class and its subclasses
 public:
 	Ellipse(double a, double b, Point center);
 	Ellipse(double a, double b);
-	string ToString() const;
+	virtual string ToString() const;
 	double GetArea()const;
 	double GetPerimeter()const;
 };

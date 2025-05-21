@@ -14,7 +14,7 @@ Circle::Circle(double radius, Point center) : Ellipse(radius, radius, center) {
 
 string Circle::ToString() const {
 	stringstream ss;
-	ss << "Circle " << Ellipse::ToString(); // Call my parent ToString
+	ss << "Circle" ; // Call my parent ToString
 	return ss.str();
 }
 
